@@ -2,6 +2,8 @@ import Head from "next/head";
 import { useState } from "react";
 import styles from "./index.module.css";
 
+const port = process.env.port || 8080
+
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
@@ -35,21 +37,21 @@ export default function Home() {
     <div>
       <Head>
         <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/cross.png" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <img src="/cross.png" className={styles.icon} />
+        <h3>Virtual Jesus</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="animal"
-            placeholder="Enter an animal"
+            placeholder="What would you like to know?"
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Ask and you shall receive" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
