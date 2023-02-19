@@ -68,8 +68,9 @@
 }
 
 .main .result {
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-wrap: break-word;
 }
