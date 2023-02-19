@@ -53,5 +53,5 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Based on all available and reliable religious texts and interpretations, give a first person response from Jesus if a person asked " ${capitalizedAnimal}" After your answer, then please include a link to Bible.com of the relvant chapter and verse of scripture`;
+  return `Based on all available and reliable religious texts and interpretations, give a detailed first person response from Jesus if a person asked " ${capitalizedAnimal}" After answering the question, then please include a link to Bible.com of the relvant chapter and verse of scripture`;
 }
