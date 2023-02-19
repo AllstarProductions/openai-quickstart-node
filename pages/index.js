@@ -51,7 +51,7 @@ export default function Home() {
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Ask and you shall receive" />
+          <input type="submit" value="Ask Jesus" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
